@@ -15,20 +15,21 @@ class Second
         
         while (levels > 0)
         {
-            // print spaces
-            for (var i = 0; i < spacesFromLeftToFirstNumber; ++i)
-            {
-                row += " ";
-            }
             
-            // print central part
+            for (var i = 0; i < spacesFromLeftToFirstNumber; ++i)
+                row += " ";
+            
+        
+            // Code central part
             
         for (var i = 0; i < timesRepeatNumber; ++i)
         {
-            row += levels;
+            row += levels; 
+
+            // check if number is not last in row
             if (i < (timesRepeatNumber - 1))
             {
-                // check if number is not last in row
+         
                 if (levels < 10)
                 {
                     row += ", ";
